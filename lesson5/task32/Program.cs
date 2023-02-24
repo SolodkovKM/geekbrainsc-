@@ -1,4 +1,4 @@
-﻿int[] FillArray(int length, int leftnum, int rightnum)
+int[] FillArray(int length, int leftnum, int rightnum)
 {
     int[] rand_arr = new int[length];
     for (int i = 0; i < rand_arr.Length; i++)
