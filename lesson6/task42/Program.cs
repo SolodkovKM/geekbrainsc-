@@ -7,7 +7,7 @@ void ConvertToBin(int x)
     if(x > 0)
     {
         ConvertToBin(x/2);
-        binary = x % 2 + binary;
+        binary += x % 2 ;
     }
 }
 
