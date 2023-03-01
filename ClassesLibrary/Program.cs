@@ -1,6 +1,6 @@
 ﻿namespace ClassesLibrary{
 
-    public static class Extentions
+    public static class PrintExtentions
     {
         public static int PrintGet(this String message)
         {
@@ -16,10 +16,10 @@
             Console.WriteLine(text);
         }
     }
-    public class ArrayWork
+    public static class ArrayExtention
     {
         static void Main(string[] args) { }
-        public double[] FillArray(int length, double range)
+        public static double[] FillArray(this Array array, int length, double range)
         {
             double[] rand_arr = new double[length];
             for (int i = 0; i < rand_arr.Length; i++)
@@ -28,7 +28,7 @@
             }
             return rand_arr;
         }
-        public int[] FillArray(int length, int leftnum , int rightnum)
+        public static int[] FillArray(this Array array, int length, int leftnum, int rightnum)
         {
             int[] rand_arr = new int[length];
             for (int i = 0; i < rand_arr.Length; i++)
@@ -37,7 +37,7 @@
             }
             return rand_arr;
         }
-        public char[] FillArray(int length)
+        public static char[] FillArray(this Array array, int length)
         {
             char[] rand_arr = new char[length];
             for(int i = 0; i < rand_arr.Length; i++)
