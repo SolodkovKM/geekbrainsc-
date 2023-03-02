@@ -1,6 +1,4 @@
-using System;
-
-namespace ClassesLibrary{
+﻿namespace ClassesLibrary{
 
     public static class PrintExtentions
     {
@@ -12,10 +10,11 @@ namespace ClassesLibrary{
         public static void Print(this Int32 num) {Console.WriteLine(num);}
         public static void Print(this String text){Console.WriteLine(text);}
         public static void Print(this Boolean booltext){Console.WriteLine(booltext);}
+        public static string PrintArray(this Array array) => string.Join(", ", array);
     }
     public static class ArrayExtention
     {
-        static void Main(string[] args) { }
+        static void Main(string[] args){}
         public static double[] FillArray(this Array array, int length, double range)
         {
             double[] rand_arr = new double[length];
