@@ -1,4 +1,5 @@
 ﻿using ClassesLibrary;
+using System.Linq;
 int[,] matrix = ArrayExtention.FillMatrix(5, 5);
 double[] FindAgrColumns(int[,] matrix)
 {
@@ -21,4 +22,7 @@ double[] FindAgrColumns(int[,] matrix)
 
 
 ArrayExtention.PrintMatrix(matrix);
-Console.WriteLine(string.Join(" ", FindAgrColumns(matrix)));
+Console.WriteLine(string.Join(" ", FindAgrColumns(matrix).Select(x => string.Format("{0:0.00}", x))));
+
+double x = 2.000;
+Console.WriteLine(string.Format("{0:0.00}", x));
