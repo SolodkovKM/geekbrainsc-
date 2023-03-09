@@ -25,7 +25,7 @@ namespace ClassesLibrary{
         static void Main(string[] args){}
         public static int[,] FillMatrix(int length_x, int length_y, int leftnum = 0, int rightnum = 10)
         {
-            int[,] matrix = new int[length_y, length_y];
+            int[,] matrix = new int[length_y, length_x];
             for(int i = 0; i < length_y; i++)
             {
                 for(int j = 0; j < length_x; j++)
